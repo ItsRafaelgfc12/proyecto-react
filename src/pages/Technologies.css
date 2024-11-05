@@ -1,8 +1,27 @@
 .technologies {
-    padding: 20px;
-  }
-  
-  .technologies h2 {
-    color: #4CAF50;
-  }
-  
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.technologies h2 {
+  color: #353535;
+}
+
+.technologies p {
+  margin: 15px 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.technologies ul {
+  list-style: circle;
+  margin-left: 20px;
+}
+
+.technologies ul li {
+  margin: 10px 0;
+}
+
+.technologies ul li strong {
+  color: #333;
+}
