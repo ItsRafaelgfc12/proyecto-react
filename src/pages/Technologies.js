@@ -1,31 +1,47 @@
-// src/pages/Technologies.js
 import React from 'react';
 import './Technologies.css';
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
 
 const Technologies = () => {
   return (
-    <div className="technologies">
-      <h2>Tecnologías para Desarrollo de Aplicaciones Móviles</h2>
-      <p>
-        El desarrollo de aplicaciones móviles ha evolucionado rápidamente, y hoy en día existen múltiples tecnologías para crear apps funcionales y atractivas. A continuación, exploramos algunas de las principales:
-      </p>
-      <ul>
-        <li>
-          <strong>React Native:</strong> Un framework de código abierto creado por Facebook, permite desarrollar aplicaciones móviles multiplataforma utilizando JavaScript y React. React Native permite crear una única base de código para Android e iOS, reduciendo el tiempo y costo de desarrollo.
-        </li>
-        <li>
-          <strong>Flutter:</strong> Un framework de Google que facilita la creación de aplicaciones nativas desde una sola base de código. Es conocido por su rendimiento y por el uso de widgets personalizables que logran una excelente experiencia de usuario.
-        </li>
-        <li>
-          <strong>Swift:</strong> Un lenguaje de programación desarrollado por Apple, ideal para el desarrollo de aplicaciones iOS. Swift es seguro, eficiente y tiene una sintaxis fácil de leer, lo que lo convierte en la opción preferida para apps iOS nativas.
-        </li>
-        <li>
-          <strong>Kotlin:</strong> Un lenguaje de programación oficial para el desarrollo de aplicaciones Android, respaldado por Google. Kotlin es seguro y moderno, y ofrece una mejor interoperabilidad con Java, lo que hace que el desarrollo de Android sea más eficiente.
-        </li>
-      </ul>
-      <p>
-        Estas tecnologías permiten a los desarrolladores crear aplicaciones móviles que satisfacen las necesidades del usuario y ofrecen una experiencia intuitiva y de alto rendimiento.
-      </p>
+    <div className="all">
+      <Container className="content">
+        <h1 className="text-center">Registro de Usuarios</h1>
+        <Form>
+          <FloatingLabel controlId="floatingInputName" label="Nombres" className="mb-3">
+            <Form.Control type="text" placeholder="Nombres" />
+          </FloatingLabel>
+          
+          <FloatingLabel controlId="floatingInputLastName" label="Apellidos" className="mb-3">
+            <Form.Control type="text" placeholder="Apellidos" />
+          </FloatingLabel>
+          
+          <FloatingLabel controlId="floatingInputDate" label="Fecha de nacimiento" className="mb-3">
+            <Form.Control type="date" placeholder="Fecha de nacimiento" />
+          </FloatingLabel>
+
+          <FloatingLabel controlId="floatingInputEmail" label="Correo" className="mb-3">
+            <Form.Control type="email" placeholder="name@example.com" />
+          </FloatingLabel>
+
+          <FloatingLabel controlId="floatingPassword" label="Contraseña" className="mb-3">
+            <Form.Control type="password" placeholder="Contraseña" />
+          </FloatingLabel>
+
+          <FloatingLabel controlId="floatingConfirmPassword" label="Confirmar Contraseña" className="mb-3">
+            <Form.Control type="password" placeholder="Confirmar Contraseña" />
+          </FloatingLabel>
+
+          <div className="text-center">
+            <Button variant="primary" type="submit">
+              Registrar
+            </Button>
+          </div>
+        </Form>
+      </Container>
     </div>
   );
 };

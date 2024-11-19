@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import Benefits from './pages/Benefits';
 import Technologies from './pages/Technologies';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const App = () => {
   return (

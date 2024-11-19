@@ -1,17 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import './Header.css';
 
 const Header = () => {
   return (
-    <header className="header">
-      <h1>Aplicaciones Móviles</h1>
-      <nav>
-        <Link to="/">Inicio</Link>
-        <Link to="/benefits">Beneficios</Link>
-        <Link to="/technologies">Tecnologías</Link>
-      </nav>
-    </header>
+    <Navbar bg="dark" variant="dark" expand="lg" className="header">
+      <Container>
+        <Navbar.Brand as={Link} to="/">
+          Realidad Aumentada
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link as={Link} to="/">
+              Inicio
+            </Nav.Link>
+            <Nav.Link as={Link} to="/benefits">
+              CRUD
+            </Nav.Link>
+            <Nav.Link as={Link} to="/technologies">
+              Registro
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 

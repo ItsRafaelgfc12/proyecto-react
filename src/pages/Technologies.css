@@ -1,27 +1,40 @@
-.technologies {
+/* General container styling */
+.all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f8ff; /* Azul claro */
   padding: 20px;
-  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
-.technologies h2 {
-  color: #353535;
+/* Form content styling */
+.content {
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
 }
 
-.technologies p {
-  margin: 15px 0;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.technologies ul {
-  list-style: circle;
-  margin-left: 20px;
-}
-
-.technologies ul li {
-  margin: 10px 0;
-}
-
-.technologies ul li strong {
+/* Heading styling */
+.content h1 {
+  font-family: 'Arial', sans-serif;
   color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input fields spacing */
+.mb-3 {
+  margin-bottom: 1.5rem !important;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
 }
